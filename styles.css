@@ -1,3 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-section {
+    float: left; /* Alinea a la izquierda */
+    width: 75%;
+    height: 75vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .content {
+    text-align: auto;
+  }
+  
+  .content h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .content img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .content p {
+    font-size: 16px;
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    float: right; /* Alinea a la derecha */
+    width: 25%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .recent-news h2,
+  .advertise h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #0073be;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+  .icon-links {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de la columna */
+  align-items: left; /* Alinea los elementos al centro horizontalmente */
+}
+
+.icon-links a {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 5px 0; /* Espacio entre cada icono */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+  
+  .icon-links a:hover {
+    background-color: #333
+  }
+
+  .bottom-section {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .category,
+  .country {
+    background-color: #0073be;
+    color: white;
+    padding: 5px 10px; /* Reducimos el padding para hacerlos más pequeños */
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .country {
+    background-color: #555;
+  }
+  
+  .category h3,
+  .country h3 {
+    font-size: 14px; /* Ajustamos el tamaño del título */
+  }
+  
+  .category p,
+  .country p {
+    font-size: 12px; /* Ajustamos el tamaño del texto */
+  }
+
 #top-bar{
     background-color: #0073be;
 }
