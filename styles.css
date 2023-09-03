@@ -3,6 +3,13 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  footer {
+    width: 100%; /* Hacer que el footer ocupe todo el ancho */
+    display: flex;
+    background-color: #333;
+    color: white;
+}
   
   .main-section {
     float: left; /* Alinea a la izquierda */
@@ -100,10 +107,11 @@ body {
   .country {
     background-color: #0073be;
     color: white;
-    padding: 5px 10px; /* Reducimos el padding para hacerlos más pequeños */
-    border-radius: 5px;
-    flex: 1;
-    margin-right: 10px;
+    padding: 3px 6px; /* Reducimos el padding para hacerlos más pequeños */
+    margin-right: 5px; /* Ajustamos el margen derecho de los rectángulos */
+    flex: 0.1; /* Cambiamos el valor de flex para ajustar el tamaño */
+
+    
   }
   
   .country {
@@ -113,12 +121,67 @@ body {
   .category h3,
   .country h3 {
     font-size: 14px; /* Ajustamos el tamaño del título */
+    margin: 0;
+    display: inline; /* Cambiamos a "inline" para que estén en línea */
+    margin-right: 5px; /* Agregamos un margen derecho para separarlos */
   }
   
   .category p,
   .country p {
     font-size: 12px; /* Ajustamos el tamaño del texto */
   }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alineamos verticalmente los elementos */
+    margin-top: 3px;
+  }
+  
+  .rect {
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    margin-right: 0.5px;
+  }
+
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Estilos adicionales para los iconos redondos */
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 
 #top-bar{
     background-color: #0073be;
