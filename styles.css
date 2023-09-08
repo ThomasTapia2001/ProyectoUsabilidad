@@ -1,188 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  footer {
-    width: 100%; /* Hacer que el footer ocupe todo el ancho */
-    display: flex;
-    background-color: #333;
-    color: white;
-}
-  
-  .main-section {
-    float: left; /* Alinea a la izquierda */
-    width: 75%;
-    height: 75vh;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .content {
-    text-align: auto;
-  }
-  
-  .content h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .content img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-  
-  .content p {
-    font-size: 16px;
-  }
-  
-  .sidebar {
-    background-color: #f4f4f4;
-    float: right; /* Alinea a la derecha */
-    width: 25%;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .recent-news h2,
-  .advertise h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  textarea {
-    width: 100%;
-    padding: 10px;
-    resize: none;
-  }
-  
-  button {
-    background-color: #0073be;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555;
-  }
-
-  .icon-links {
-  display: flex;
-  flex-direction: column; /* Cambia la dirección de la columna */
-  align-items: left; /* Alinea los elementos al centro horizontalmente */
-}
-
-.icon-links a {
-  display: inline-block;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  color: white;
-  border-radius: 50%;
-  font-size: 20px;
-  line-height: 40px;
-  margin: 5px 0; /* Espacio entre cada icono */
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-  
-  .icon-links a:hover {
-    background-color: #333
-  }
-
-  .bottom-section {
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .category,
-  .country {
-    background-color: #0073be;
-    color: white;
-    padding: 3px 6px; /* Reducimos el padding para hacerlos más pequeños */
-    margin-right: 5px; /* Ajustamos el margen derecho de los rectángulos */
-    flex: 0.1; /* Cambiamos el valor de flex para ajustar el tamaño */
-
-    
-  }
-  
-  .country {
-    background-color: #555;
-  }
-  
-  .category h3,
-  .country h3 {
-    font-size: 14px; /* Ajustamos el tamaño del título */
-    margin: 0;
-    display: inline; /* Cambiamos a "inline" para que estén en línea */
-    margin-right: 5px; /* Agregamos un margen derecho para separarlos */
-  }
-  
-  .category p,
-  .country p {
-    font-size: 12px; /* Ajustamos el tamaño del texto */
-  }
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Alineamos verticalmente los elementos */
-    margin-top: 3px;
-  }
-  
-  .rect {
-    width: 30px;
-    height: 30px;
-    background-color: #555;
-    margin-right: 0.5px;
-  }
-
-  .footer-section {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-section h2,
-.footer-section h3 {
-    margin-top: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 5px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-/* Estilos adicionales para los iconos redondos */
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
 #top-bar{
     background-color: #0073be;
 }
@@ -198,4 +13,96 @@ li{
     color: black; 
     font-weight: 400; 
     font-size: 17px;
+}
+/* Estilo para el contenedor de la izquierda (70%) */
+.left-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Estilo para la descripción de la sección */
+.section-description {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.section-description strong {
+  font-weight: bold;
+}
+
+/* Estilo para el contenedor de la derecha (30%) */
+.right-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Estilos adicionales para hacerlo visualmente atractivo */
+h1 {
+  font-size: 24px;
+  text-align: left; /*Alinea el texto a la izquierda */
+}
+
+p {
+  font-size: 12px; /* Tamaño de fuente */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina el relleno predeterminado */
+  line-height: 1.5; /* Espacio entre líneas uniforme para una mejor legibilidad */
+
+}
+/* Estilo para el título de la descripción */
+.left-container h2 {
+  font-size: 18px;
+  margin-top: 0; /* Elimina el margen superior predeterminado */
+  text-align: left; /*Alinea el texto a la izquierda */
+  color: #333; /* Color del texto del título */
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #0073be;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%; /* Ancho completo de la página */
+  position: fixed;
+  bottom: 0; /* Se coloca en la parte inferior de la página */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px; /* Ancho máximo del contenido del footer */
+  margin: 0 auto; /* Centra el contenido del footer horizontalmente */
+}
+
+.footer-item {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.footer-item h4 {
+  font-size: 18px;
+}
+
+.footer-item h5 {
+  font-size: 55px;
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item ul li {
+  margin-bottom: 8px;
+}
+
+.footer-item ul li a {
+  color: #fff;
+  text-decoration: none;
 }

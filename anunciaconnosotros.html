@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
     <title>Document</title>
-    
 </head>
 <body>
     <header>
@@ -106,75 +105,66 @@
             </div>
         </div>
     </header>
-    
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
-            <!-- Contenedor Izquierdo (70%) -->
-            <div class="col-lg-8">
-                <div class="left-container">
-                    <!-- Descripción de la sección, tipo de noticia y nombre de la noticia -->
-                    <div class="section-description">
-                    <p>Inicio » País » <strong>3 de cada 10 estudiantes universitarios en Quito han sido víctimas de robo o intento de robo</strong></p>
-                    <!-- Contenido del contenedor izquierdo -->
-                    <h2>3 de cada 10 estudiantes universitarios en Quito han sido víctimas de robo o de intento de robo</h2>
-                    <p>Junio 21, 2023 </p>
-                    <img src="https://www.lahora.com.ec/wp-content/uploads/2023/09/pexels-skitterphoto-3768-2048x1151.jpg" alt="Descripción de la imagen" style="width: 100%;">
-                    <!-- Resto del contenido del contenedor de la izquierda -->
-                    <h2>Esta realidad ha provoca cambios en la rutina diaria y menos salidas a lugares de entretenimiento. Las horas de mayor ocurrencia de robos es entre las 13:00 y 16:00.</h2>
-                    <p>En la actualidad, la mayoría de estudiantes universitarios han retomado sus clases presenciales, sin embargo, la inseguridad también afecta a este grupo de ciudadanos, provocando que modifiquen sus horarios, rutas y salidas de entretenimiento para no ser víctimas de la delincuencia.
-                        Oikonomics Consultora Económica presentó el estudio “Percepción de Seguridad en Quito”, el cual fue publicado en el mes de abril de 2023. En ese estudio se establecía que más de la mitad de las familias quiteñas consumen menos por el aumento de la delincuencia.
-                        Ahora, como complemento, se realizaron encuestas se realizaron del 3 al 5 de junio de 2023, logrando recopilar 233 encuestas efectivas. En cuanto a las características del encuestado, el 4% fueron estudiantes menores de 18 años y el porcentaje restante tenían edades entre 18 a 25 años. Además, se obtuvo el mismo número de encuestas por parte de hombres y mujeres.
-                        El objetivo fue conocer cómo los estudiantes universitarios residentes en la capital han modificado su comportamiento después de ser víctimas de robo o de intento de robo.</p>
-                </div>
-                </div>
-            </div>
-            <!-- Contenedor Derecho (30%) -->
-            <div class="col-lg-4">
-                <div class="right-container">
-                    <h1>Contenedor Derecho (30%)</h1>
-                    <p>Este es el contenido del contenedor derecho.</p>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-item">
-                <h5><strong> LA HORA <a class="home-link" href="https://www.lahora.com.ec/"></a></strong> </h5>
+            <div class="col-lg-6">
+                <div class="chat-box">
+                    <h2>Chat de Ayuda</h2>
+                    <div class="container">
+                        <div class="faq">
+                            <div class="question" onclick="toggleAnswer(1)">¿Cómo puedo solicitar una cotización de contrato?</div>
+                            <div class="answer" id="answer1">
+                                Puede solicitar una cotización de contrato en Diario La Hora Ecuador contactando a nuestro equipo de ventas en el teléfono XXX-XXXXXX o enviando un correo electrónico a ventas@lahoraec.com.
+                            </div>
                 
-                <ul>
-                    <li>© 2023 La Hora. Todos los derechos reservados. Prototipo por terceros.</li>
-                </ul>
+                            <div class="question" onclick="toggleAnswer(2)">¿Cuáles son los requisitos para obtener una cotización?</div>
+                            <div class="answer" id="answer2">
+                                Los requisitos varían según el tipo de anuncio y la duración del contrato. Por favor, comuníquese con nuestro equipo de ventas para obtener información detallada sobre los requisitos específicos para su anuncio.
+                            </div>
+                
+                            <div class="question" onclick="toggleAnswer(3)">¿Cuál es el costo promedio de un contrato de anuncio en Diario La Hora Ecuador?</div>
+                            <div class="answer" id="answer3">
+                                El costo de un contrato de anuncio puede variar según varios factores, como el tamaño del anuncio, la ubicación en la publicación y la duración del contrato. Para obtener una cotización precisa, le recomendamos que se comunique con nuestro equipo de ventas.
+                            </div>
+                        </div>
+                    </div>
+                
+                    <script>
+                        function toggleAnswer(id) {
+                            var answer = document.getElementById('answer' + id);
+                            if (answer.style.display === 'none' || answer.style.display === '') {
+                                answer.style.display = 'block';
+                            } else {
+                                answer.style.display = 'none';
+                            }
+                        }
+                    </script>
+                    <input type="text" class="phone-input" placeholder="Número de celular">
+                    <button class="rectangle-button">Enviar</button>
+                    <button class="rectangle-button">Solicitar más ayuda</button>
+                </div>
             </div>
-            <div class="footer-item">
-                <h4>Sección 2</h4>
-                <ul>
-                    <li><a href="#">Enlace 4</a></li>
-                    <li><a href="#">Enlace 5</a></li>
-                    <li><a href="#">Enlace 6</a></li>
-                </ul>
+            <div class="col-lg-6">
+                <div class="news-section">
+                    <h2>Noticias Recientes</h2>
+                    <!-- Agrega aquí las noticias recientes -->
+                    <div class="news-item">Noticia 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="news-item">Noticia 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="news-item">Noticia 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+                    <div class="news-item">Noticia 4: Duis aute irure dolor in reprehenderit in voluptate velit.</div>
+                    <div class="news-item">Noticia 5: Excepteur sint occaecat cupidatat non proident, sunt in culpa.</div>
+                </div>
             </div>
-            <div class="footer-item">
-                <h4>Sección 3</h4>
-                <ul>
-                    <li><a href="#">Enlace 7</a></li>
-                    <li><a href="#">Enlace 8</a></li>
-                    <li><a href="#">Enlace 9</a></li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <h4>Sección 4</h4>
-                <ul>
-                    <li><a href="#">Enlace 10</a></li>
-                    <li><a href="#">Enlace 11</a></li>
-                    <li><a href="#">Enlace 12</a></li>
-                </ul>
+            <div class="col-lg-6">
+                <div class="advertise-section">
+                    <h2>Anuncia con Nosotros</h2>
+                    <p>Aprovecha nuestras ofertas de publicidad.</p>
+                    <button class="rectangle-button">Paquetes de Anuncio</button>
+                </div>
             </div>
         </div>
-    </footer>
-
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
