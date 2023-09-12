@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     modoOscuroBtn.addEventListener("click", function() {
         body.classList.remove("modo-claro");
         body.classList.add("modo-oscuro");
-        left.classList.add("left-containe-black")
+        
     });
 
     modoClaroBtn.addEventListener("click", function() {
