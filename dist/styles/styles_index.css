@@ -45,6 +45,13 @@ li{
       margin-right: -15px;
   }
 
+  .left-containe-black{
+    padding: 15px;
+    background-color: #333; /* Cambia el color de fondo según sea necesario */
+    width: 100%; /* Ajusta el ancho del contenedor al 100% */
+    box-sizing: border-box;
+  }
+
   .left-container {
     padding: 15px;
     background-color: #f0f0f0; /* Cambia el color de fondo según sea necesario */
@@ -80,6 +87,8 @@ body.modo-oscuro {
 body.modo-oscuro a {
     color: #fff; /* Cambia el color de los enlaces en modo oscuro */
 }
+
+
 
 /* Modo Claro */
 body.modo-claro {
@@ -188,4 +197,8 @@ footer {
   color: white; /* Cambia el color del texto a blanco */
   font-size: 30px; /* Ajusta el tamaño de fuente según tus preferencias */
   /* Otros estilos de fuente, como tipo de fuente, peso, estilo, etc., pueden agregarse aquí si es necesario */
+}
+
+.white {
+
 }

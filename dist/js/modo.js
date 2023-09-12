@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const modoOscuroBtn = document.getElementById("modo-oscuro");
     const modoClaroBtn = document.getElementById("modo-claro");
     const body = document.body;
+    const left = document.getElementById("left")
 
     modoOscuroBtn.addEventListener("click", function() {
         body.classList.remove("modo-claro");
         body.classList.add("modo-oscuro");
+        left.classList.add("left-containe-black")
     });
 
     modoClaroBtn.addEventListener("click", function() {
