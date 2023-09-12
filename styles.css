@@ -14,95 +14,104 @@ li{
     font-weight: 400; 
     font-size: 17px;
 }
-/* Estilo para el contenedor de la izquierda (70%) */
-.left-container {
-  background-color: #f2f2f2;
-  padding: 20px;
+
+  /* Alinea los contenedores con el ancho de la página */
+  .container {
+      width: 100%;
+      max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+      margin: 0 auto; /* Centra el contenido horizontalmente */
+      padding: 0 15px; /* Añade un espacio a los lados del contenido */
+  }
+
+  /* Ajusta el ancho de las columnas según tu diseño */
+  .col-lg-8 {
+      width: 65%;
+  }
+
+  .col-lg-4 {
+      width: 35%;
+  }
+
+  /* Añade espacio entre las columnas si es necesario */
+  .row {
+      margin-left: -15px;
+      margin-right: -15px;
+  }
+
+  /* Estilos adicionales para los contenedores izquierdo y derecho */
+  .left-container {
+      padding: 15px;
+      background-color: #f0f0f0; /* Cambia el color de fondo según sea necesario */
+  }
+
+  .right-container {
+      padding: 15px;
+      background-color: #f9f9f9; /* Cambia el color de fondo según sea necesario */
+  }
+
+  /* Estilo para el botón rectangular */
+.rectangular-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Espacio superior para separar el botón de los elementos anteriores */
 }
 
-/* Estilo para la descripción de la sección */
-.section-description {
-  background-color: #f2f2f2;
-  color: #333;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.section-description strong {
-  font-weight: bold;
-}
-
-/* Estilo para el contenedor de la derecha (30%) */
-.right-container {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-/* Estilos adicionales para hacerlo visualmente atractivo */
-h1 {
-  font-size: 24px;
-  text-align: left; /*Alinea el texto a la izquierda */
-}
-
-p {
-  font-size: 12px; /* Tamaño de fuente */
-  text-align: left; /* Alinea el texto a la izquierda */
-  margin: 0; /* Elimina los márgenes predeterminados */
-  padding: 0; /* Elimina el relleno predeterminado */
-  line-height: 1.5; /* Espacio entre líneas uniforme para una mejor legibilidad */
-
-}
-/* Estilo para el título de la descripción */
-.left-container h2 {
-  font-size: 18px;
-  margin-top: 0; /* Elimina el margen superior predeterminado */
-  text-align: left; /*Alinea el texto a la izquierda */
-  color: #333; /* Color del texto del título */
-}
-
-/* Estilos para el footer */
 footer {
-  background-color: #0073be;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  width: 100%; /* Ancho completo de la página */
   position: fixed;
-  bottom: 0; /* Se coloca en la parte inferior de la página */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0073be; /* Cambia esto al color de fondo que desees para el footer */
+  padding: 10px 0; /* Añade espacio alrededor del contenido del footer */
+  text-align: center; /* Centra el contenido del footer */
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  max-width: 1200px; /* Ancho máximo del contenido del footer */
-  margin: 0 auto; /* Centra el contenido del footer horizontalmente */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-item {
-  flex: 1;
-  padding: 0 10px;
+  flex-basis: calc(25% - 20px); /* Divide el footer en 4 columnas y agrega espacio entre ellas */
+  margin: 10px 0;
+  text-align: left; /* Alinea el contenido a la izquierda en cada columna */
 }
 
-.footer-item h4 {
-  font-size: 18px;
-}
-
-.footer-item h5 {
-  font-size: 55px;
-}
-
+/* Estilos adicionales para los enlaces */
 .footer-item ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-item ul li {
-  margin-bottom: 8px;
+.footer-item li {
+  display: inline-block; /* Cambia la visualización de los elementos de la lista a en línea */
+  margin-right: 10px; /* Añade un espacio entre los íconos si es necesario */
 }
 
-.footer-item ul li a {
-  color: #fff;
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  font-size: 1px; /* Cambia el tamaño de las letras a 10px */
+}
+
+.footer-item li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-item a {
   text-decoration: none;
+  color: #333;
 }
