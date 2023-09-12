@@ -1,0 +1,71 @@
+/* Estilos para el contenedor centrado */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form h2 {
+    margin: 0 0 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Estilos para el contenedor con id "white" */
+
+
+/* Estilos para el botón */
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 25px; /* Espacio superior para separar del contenido anterior */
+  
+}
+.create-account {
+    margin-top: 15px;
+}
+
+.create-account a {
+    text-decoration: underline;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.create-account a:hover {
+    color: #0056b3;
+}
