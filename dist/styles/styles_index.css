@@ -130,13 +130,13 @@ body.modo-claro a {
 
 
 footer {
-  position: absolute;
+  position: flex;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 4rem;
   background-color: #0073be; /* Cambia esto al color de fondo que desees para el footer */
-  padding: 100px 0; /* Añade espacio alrededor del contenido del footer */
+  padding: 120px; /* Añade espacio alrededor del contenido del footer */
   text-align: center; /* Centra el contenido del footer */
   /* z-index: 999; Asegura que el footer esté en la parte superior de otros elementos */
 }
@@ -145,7 +145,8 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
   bottom: 0;
 }
 
@@ -155,13 +156,14 @@ footer {
 
 .footer-item {
   flex-basis: calc(25% - 20px); /* Divide el footer en 4 columnas y agrega espacio entre ellas */
-  margin: 10px 0;
+  margin: -90px 0;
   text-align: left; /* Alinea el contenido a la izquierda en cada columna */
 }
 
 /* Estilos adicionales para los enlaces */
 .footer-item ul {
   list-style: none;
+  display: inline-block;
   padding: 0;
 }
 
