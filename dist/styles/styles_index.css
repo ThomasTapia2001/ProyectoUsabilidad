@@ -83,6 +83,25 @@ body.modo-claro a {
     color: #333; /* Cambia el color de los enlaces en modo claro */
 }
 
+
+/* Estilos para las imágenes circulares */
+.circular-image {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 10px auto; /* Para centrar las imágenes */
+    overflow: hidden; /* Ocultar partes de la imagen fuera del círculo */
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar la imagen para que cubra todo el círculo */
+    display: block; /* Eliminar espacio adicional en la parte inferior */
+}
+
+
 footer {
   position: fixed;
   bottom: 0;
