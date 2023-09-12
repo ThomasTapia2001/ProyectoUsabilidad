@@ -63,6 +63,26 @@ li{
   margin-top: 20px; /* Espacio superior para separar el botón de los elementos anteriores */
 }
 
+/* Modo Oscuro */
+body.modo-oscuro {
+    background-color: #333;
+    color: #fff;
+}
+
+body.modo-oscuro a {
+    color: #fff; /* Cambia el color de los enlaces en modo oscuro */
+}
+
+/* Modo Claro */
+body.modo-claro {
+    background-color: #fff;
+    color: #333;
+}
+
+body.modo-claro a {
+    color: #333; /* Cambia el color de los enlaces en modo claro */
+}
+
 footer {
   position: fixed;
   bottom: 0;
