@@ -1,3 +1,8 @@
+/* Fuente Montserrat para todo el CSS */
+body, h4, h5, ul, li, .rectangular-button, .small-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
 #top-bar{
     background-color: #0073be;
 }
@@ -26,10 +31,12 @@ li{
   /* Ajusta el ancho de las columnas según tu diseño */
   .col-lg-8 {
       width: 65%;
+      overflow: auto;
   }
 
   .col-lg-4 {
       width: 35%;
+      color: #0073be; /* Cambia el color del texto a rojo o el color deseado */
   }
 
   /* Añade espacio entre las columnas si es necesario */
@@ -38,11 +45,12 @@ li{
       margin-right: -15px;
   }
 
-  /* Estilos adicionales para los contenedores izquierdo y derecho */
   .left-container {
-      padding: 15px;
-      background-color: #f0f0f0; /* Cambia el color de fondo según sea necesario */
-  }
+    padding: 15px;
+    background-color: #f0f0f0; /* Cambia el color de fondo según sea necesario */
+    width: 100%; /* Ajusta el ancho del contenedor al 100% */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
 
   .right-container {
       padding: 15px;
@@ -166,4 +174,18 @@ footer {
     font-size: 10px; /* Tamaño de fuente más pequeño */
     line-height: 1.4; /* Espaciado entre líneas */
     /* Otros estilos opcionales, como color de texto o márgenes */
+}
+
+/* Estilo para los títulos <h4> */
+.footer-item h4 {
+  color: #f0c661; /* Cambia el color del texto a blanco */
+  font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+  /* Otros estilos de fuente, como tipo de fuente, peso, estilo, etc., pueden agregarse aquí si es necesario */
+}
+
+/* Estilo para los títulos <h5> */
+.footer-item h5 {
+  color: white; /* Cambia el color del texto a blanco */
+  font-size: 30px; /* Ajusta el tamaño de fuente según tus preferencias */
+  /* Otros estilos de fuente, como tipo de fuente, peso, estilo, etc., pueden agregarse aquí si es necesario */
 }
