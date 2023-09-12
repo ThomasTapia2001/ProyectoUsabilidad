@@ -105,66 +105,39 @@
             </div>
         </div>
     </header>
-    <div class="container mt-4">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <div class="chat-box">
-                    <h2>Chat de Ayuda</h2>
-                    <div class="container">
-                        <div class="faq">
-                            <div class="question" onclick="toggleAnswer(1)">¿Cómo puedo solicitar una cotización de contrato?</div>
-                            <div class="answer" id="answer1">
-                                Puede solicitar una cotización de contrato en Diario La Hora Ecuador contactando a nuestro equipo de ventas en el teléfono XXX-XXXXXX o enviando un correo electrónico a ventas@lahoraec.com.
-                            </div>
-                
-                            <div class="question" onclick="toggleAnswer(2)">¿Cuáles son los requisitos para obtener una cotización?</div>
-                            <div class="answer" id="answer2">
-                                Los requisitos varían según el tipo de anuncio y la duración del contrato. Por favor, comuníquese con nuestro equipo de ventas para obtener información detallada sobre los requisitos específicos para su anuncio.
-                            </div>
-                
-                            <div class="question" onclick="toggleAnswer(3)">¿Cuál es el costo promedio de un contrato de anuncio en Diario La Hora Ecuador?</div>
-                            <div class="answer" id="answer3">
-                                El costo de un contrato de anuncio puede variar según varios factores, como el tamaño del anuncio, la ubicación en la publicación y la duración del contrato. Para obtener una cotización precisa, le recomendamos que se comunique con nuestro equipo de ventas.
-                            </div>
-                        </div>
-                    </div>
-                
-                    <script>
-                        function toggleAnswer(id) {
-                            var answer = document.getElementById('answer' + id);
-                            if (answer.style.display === 'none' || answer.style.display === '') {
-                                answer.style.display = 'block';
-                            } else {
-                                answer.style.display = 'none';
-                            }
-                        }
-                    </script>
-                    <input type="text" class="phone-input" placeholder="Número de celular">
-                    <button class="rectangle-button">Enviar</button>
-                    <button class="rectangle-button">Solicitar más ayuda</button>
+            <!-- Contenedor Izquierdo (70%) -->
+            <div class="col-lg-8">
+                <div class="left-container">
+                    <h1>Chatbot</h1>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Aquí se mostrarán los mensajes del chat -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+                    <button id="send-button">Enviar</button>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="news-section">
-                    <h2>Noticias Recientes</h2>
-                    <!-- Agrega aquí las noticias recientes -->
-                    <div class="news-item">Noticia 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                    <div class="news-item">Noticia 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="news-item">Noticia 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
-                    <div class="news-item">Noticia 4: Duis aute irure dolor in reprehenderit in voluptate velit.</div>
-                    <div class="news-item">Noticia 5: Excepteur sint occaecat cupidatat non proident, sunt in culpa.</div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="advertise-section">
-                    <h2>Anuncia con Nosotros</h2>
-                    <p>Aprovecha nuestras ofertas de publicidad.</p>
-                    <button class="rectangle-button">Paquetes de Anuncio</button>
+            <!-- Contenedor Derecho (30%) -->
+            <div class="col-lg-4">
+                <div class="right-container">
+                    <h1>Noticias recientes</h1>
+                    <li>En Ambato secuestran a un hombre por 500 dólares</li><br>
+                    <li>Total silencio tras linchamiento ocurrido en Huambaló</li><br>
+                    <li>Niña resulta herida en accidente de tránsito en Píllaro</li><br>
+                    <li>Detenidos formarían parte de ‘Los Choneros’, según la Policía</li><br>
+                    <li>Una letrina, un control de PlayStation y hacinados: así es viajar en el sumergible desaparecido</li>
+
+                    <h1>Anuncia con nosotros</h1>
+                    <li>Comunícate con nuestro equipo comercial; elige tus audiencias y llega a donde quieres estar.</li>
+                    <!-- Agregar un botón rectangular -->
+        <button class="rectangular-button">Cotiza con nostros</button>
+
                 </div>
             </div>
         </div>
-    </div>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
