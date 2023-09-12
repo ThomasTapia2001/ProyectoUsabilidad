@@ -166,22 +166,23 @@ footer {
 /* Estilos para los botones */
 .help-button, .info-button, #send-phone-button {
   display: block;
-  width: 100%;
-  padding: 10px 20px;
+  width: 50%; /* Ajusta el ancho al 50% para centrar */
+  margin: 0 auto; /* Centra horizontalmente */
+  border-radius: 5px;
+  padding: 5px 10px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px; /* Reducimos el tamaño de la fuente */
   margin-top: 10px;
   cursor: pointer;
-  text-align: left;
+  text-align: center; /* Centramos el texto horizontalmente */
 }
 
 /* Estilos para el cuadro de texto */
 #phone-input {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -197,5 +198,5 @@ footer {
 /* Estilos para el contenedor del número de celular y botón */
 .phone-input-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
